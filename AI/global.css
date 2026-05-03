@@ -1,0 +1,41 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 40px 0;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  max-width: 390px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Ensure the whole app looks like a single card on desktop */
+#section-header {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+#section-input {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+#section-chat {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Hide scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
