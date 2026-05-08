@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="shopping cart add price calculation">
+    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="fix minor bugs on price">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comfirmation/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,8 @@
       <workItem from="1778235820573" duration="38000" />
       <workItem from="1778235873693" duration="1161000" />
       <workItem from="1778237044852" duration="4576000" />
-      <workItem from="1778241760892" duration="1439000" />
+      <workItem from="1778241760892" duration="3710000" />
+      <workItem from="1778247650676" duration="381000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -123,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778241870119</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix minor bugs on price">
+      <option name="closed" value="true" />
+      <created>1778243220545</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1778243220545</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +143,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -144,6 +165,7 @@
     <MESSAGE value="initial" />
     <MESSAGE value="shopping cart initial" />
     <MESSAGE value="shopping cart add price calculation" />
-    <option name="LAST_COMMIT_MESSAGE" value="shopping cart add price calculation" />
+    <MESSAGE value="fix minor bugs on price" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix minor bugs on price" />
   </component>
 </project>

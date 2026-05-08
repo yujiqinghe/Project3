@@ -65,9 +65,18 @@
     background-color: transparent;
     margin-bottom: 10px;
   }
-  .search-placeholder {
+  .search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
     color: #000000;
     font-size: 16px;
+    font-family: 'Inter', sans-serif;
+  }
+  .search-input::placeholder {
+    color: #000000;
+    opacity: 0.6;
   }
   .icon-search {
     width: 41px;
@@ -190,7 +199,7 @@
     </div>
 
     <div class="search-bar">
-      <span class="search-placeholder">Search ...</span>
+      <input type="text" class="search-input" placeholder="Search ...">
       <img src="images/0b3eac902df14abaf2aa46e7430e8fd6af51476e.png" class="icon-search" alt="Search Icon">
     </div>
   </header>
