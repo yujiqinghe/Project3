@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="initial">
+    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="shopping cart initial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DirectExport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sidebar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sidebar/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/cart/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/cart/global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comfirmation/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comfirmation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/product/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/product/global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productinfo/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/productinfo/global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productinfo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/productinfo/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +102,7 @@
       <workItem from="1778235684283" duration="116000" />
       <workItem from="1778235820573" duration="38000" />
       <workItem from="1778235873693" duration="1161000" />
-      <workItem from="1778237044852" duration="2538000" />
+      <workItem from="1778237044852" duration="4576000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -120,14 +112,34 @@
       <option name="project" value="LOCAL" />
       <updated>1777814335372</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="shopping cart initial">
+      <option name="closed" value="true" />
+      <created>1778239672301</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1778239672301</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="shopping cart initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="shopping cart initial" />
   </component>
 </project>

@@ -134,6 +134,41 @@
   justify-content: center;
   z-index: 2;
 }
+.qty-stepper {
+  position: absolute;
+  right: 22px;
+  top: 93px;
+  display: none;
+  align-items: center;
+  gap: 4px;
+  z-index: 3;
+}
+.qty-stepper.active {
+  display: flex;
+}
+.qty-stepper-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #ebebfb;
+  background-color: #ffffff;
+  color: #1e222b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+}
+.qty-stepper-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e222b;
+  min-width: 18px;
+  text-align: center;
+}
   </style>
   <script src="global.js" defer></script>
 </head>

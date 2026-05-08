@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generated Page</title>
+  <title>Shopping Cart</title>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="global.css">
   <style id="sections-styles">
 /* CSS for section section:Header */
@@ -26,7 +26,26 @@
   }
 
 /* CSS for section section:Content */
-.background-lines {
+.cart-title {
+    position: absolute;
+    top: 66px;
+    left: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e222b;
+    z-index: 5;
+  }
+  .cart-items {
+    position: absolute;
+    top: 110px;
+    left: 24px;
+    right: 24px;
+    bottom: 290px;
+    overflow-y: auto;
+    z-index: 5;
+  }
+
+  .background-lines {
     position: absolute;
     top: 0;
     left: 0;
@@ -55,18 +74,16 @@
     bottom: 17px;
     left: 15px;
     width: 359px;
-    height: 266px;
     background-color: #f8f9fb;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     z-index: 20;
+    padding: 17px 36px 22px;
   }
   .summary-row {
     display: flex;
     justify-content: space-between;
-    padding-left: 36px;
-    padding-right: 30px;
     line-height: 20px;
   }
   .summary-row .label {
@@ -79,7 +96,7 @@
     font-weight: 500;
   }
   .summary-row.subtotal {
-    margin-top: 17px;
+    margin-top: 0;
   }
   .summary-row.delivery {
     margin-top: 13px;
@@ -89,8 +106,7 @@
   }
   .checkout-btn {
     margin-top: 35px;
-    margin-left: 16px;
-    width: 327px;
+    width: 100%;
     height: 56px;
     background-color: #b9d133;
     border-radius: 20px;
@@ -120,7 +136,9 @@
 </section>
 <section id="section-content">
   <div class="cart-title">Shopping Cart</div>
-  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-items" id="cart-items">
+    <div class="empty-cart" id="empty-cart">Your cart is empty</div>
+  </div>
   <div class="background-lines">
     <div class="line line-1"></div>
     <div class="line line-2"></div>
