@@ -5,31 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/.idea/Project3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DirectExport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sidebar/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sidebar/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sidebar/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comfirmation/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comfirmation/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comfirmation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productinfo/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productinfo/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productinfo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DirectExport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sidebar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sidebar/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/cart/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/cart/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comfirmation/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comfirmation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/product/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productinfo/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/productinfo/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productinfo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/productinfo/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,25 +37,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "yujiqinghe"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yujiqinghe&quot;
   }
-}]]></component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="9eef6d3a-24e4-4486-8ab1-83985461d017" />
-  </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/yujiqinghe/Project3.git",
-    "accountId": "9eef6d3a-24e4-4486-8ab1-83985461d017"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yujiqinghe/Project3.git&quot;,
+    &quot;accountId&quot;: &quot;f5ffe382-5665-4ba5-bc50-da93e932d610&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7,
-  "fromUser": false
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3DDQTiKrS1bgZMNHzsqnek9Q13g" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -87,7 +75,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "qoder.settings.plugin",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -103,7 +91,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.23567.141" />
       </set>
     </attachedChunks>
   </component>
@@ -115,6 +103,14 @@
       <option name="presentableId" value="Default" />
       <updated>1777814169332</updated>
       <workItem from="1777814170938" duration="4040000" />
+      <workItem from="1778117427726" duration="16000" />
+      <workItem from="1778117450757" duration="1352000" />
+      <workItem from="1778234577023" duration="984000" />
+      <workItem from="1778235576354" duration="85000" />
+      <workItem from="1778235684283" duration="116000" />
+      <workItem from="1778235820573" duration="38000" />
+      <workItem from="1778235873693" duration="1161000" />
+      <workItem from="1778237044852" duration="2538000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />

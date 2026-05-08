@@ -113,12 +113,14 @@
 <body>
 <section id="section-header">
   <header class="app-header">
-    <a href="#" aria-label="Go back">
+    <a href="../home/index.html" aria-label="Go back">
       <img src="images/662263963a09ad97a79e16d938e1ce636afde565.png" alt="Back" class="back-icon">
     </a>
   </header>
 </section>
 <section id="section-content">
+  <div class="cart-title">Shopping Cart</div>
+  <div class="cart-items" id="cart-items"></div>
   <div class="background-lines">
     <div class="line line-1"></div>
     <div class="line line-2"></div>
@@ -128,17 +130,17 @@
   <div class="checkout-sheet">
     <div class="summary-row subtotal">
       <span class="label">Subtotal</span>
-      <span class="value">$62.00</span>
+      <span class="value" id="subtotal-value">$0.00</span>
     </div>
     <div class="summary-row delivery">
       <span class="label">Delivery</span>
-      <span class="value">$2.00</span>
+      <span class="value" id="delivery-value">$2.00</span>
     </div>
     <div class="summary-row total">
       <span class="label">Total</span>
-      <span class="value">$64.00</span>
+      <span class="value" id="total-value">$0.00</span>
     </div>
-    <button class="checkout-btn">Proceed  To checkout</button>
+    <button class="checkout-btn" id="checkout-btn">Proceed To checkout</button>
   </div>
 </section>
 </body>

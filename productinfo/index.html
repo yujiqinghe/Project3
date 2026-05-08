@@ -109,18 +109,43 @@
 .btn-add-cart:hover {
   opacity: 0.9;
 }
+.cart-link {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+}
+.cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: #f9b023;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
   </style>
   <script src="global.js" defer></script>
 </head>
 <body>
 <section id="section-header">
   <header class="header">
-    <button class="back-btn" aria-label="Go back">
+    <button class="back-btn" aria-label="Go back" onclick="history.back()">
       <img src="images/662263963a09ad97a79e16d938e1ce636afde565.png" alt="Back">
     </button>
+    <a href="../cart/index.html" class="cart-link" aria-label="Shopping Cart">
+      <img src="../home/images/b9cfbe1d6eb32a6c5ac37ff59f12ec6048ff589f.png" alt="Cart" style="width:41px;height:41px;object-fit:contain;">
+      <span class="cart-badge">0</span>
+    </a>
   </header>
 </section>
-<section id="section-product">
+<section id="section-product" data-id="sea-bass-fillet" data-name="Sea Bass Fillet" data-price="38.99" data-image="images/a8d9f4e6538b9b298ccb249c3857ee4e3ec907cd.png">
   <div class="product-container">
     <div class="image-wrapper">
       <img src="images/a8d9f4e6538b9b298ccb249c3857ee4e3ec907cd.png" alt="Sea Bass" class="product-img">

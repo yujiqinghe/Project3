@@ -150,6 +150,26 @@
     border-radius: 4px;
     background-color: #1e222b;
   }
+  .cart-link {
+    position: relative;
+    display: inline-block;
+  }
+  .cart-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #f9b023;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
   </style>
   <script src="global.js" defer></script>
 </head>
@@ -161,7 +181,10 @@
     <div class="header-top">
       <img src="images/04d4a0f6c7e1149d157bd30b53de1c9e65ca5113.png" class="logo" alt="KFL Supermarket">
       <div class="header-actions">
-        <img src="images/b9cfbe1d6eb32a6c5ac37ff59f12ec6048ff589f.png" class="icon-cart" alt="Cart">
+        <a href="../cart/index.html" class="cart-link" aria-label="Shopping Cart">
+          <img src="images/b9cfbe1d6eb32a6c5ac37ff59f12ec6048ff589f.png" class="icon-cart" alt="Cart">
+          <span class="cart-badge">0</span>
+        </a>
         <img src="images/a7859c6a55c5276e55ad6a269202011b8e2cb1bc.png" class="icon-menu" alt="Menu">
       </div>
     </div>
@@ -197,7 +220,7 @@
     <h2 class="category-title">Fish</h2>
     <div class="product-grid">
       
-      <div class="product-card">
+      <div class="product-card" data-id="seabass-1kg" data-name="Seabass 1KG" data-price="30" data-image="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png">
         <div class="product-img-container">
           <img src="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" class="product-img" alt="Seabass 1KG">
         </div>
@@ -210,7 +233,7 @@
         </div>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-id="murray-cod-1kg" data-name="Murry Cod 1KG" data-price="32" data-image="images/e0c689df5feaf746e75041147fc78227b005e4c4.png">
         <div class="product-img-container">
           <img src="images/e0c689df5feaf746e75041147fc78227b005e4c4.png" class="product-img" alt="Murry Cod 1KG">
         </div>
@@ -226,34 +249,34 @@
     </div>
   </div>
 </section>
-<section id="section-category-pork" class="section-container">
+<section id="section-category-fish2" class="section-container">
   <div class="category-wrapper">
-    <h2 class="category-title">Pork</h2>
+    <h2 class="category-title">Fish</h2>
     <div class="product-grid">
-      
-      <div class="product-card">
+
+      <div class="product-card" data-id="seabass-1kg-2" data-name="Seabass 1KG" data-price="30" data-image="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png">
         <div class="product-img-container">
-          <img src="images/22_1013.svg" class="product-img placeholder-svg" alt="Orange Package 1">
+          <img src="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" class="product-img" alt="Seabass 1KG">
         </div>
-        <button class="add-btn blue">
-          <img src="images/22_1026.svg" alt="Add">
+        <button class="add-btn green">
+          <img src="images/22_986.svg" alt="Add">
         </button>
         <div class="product-info">
-          <span class="product-price">$325</span>
-          <span class="product-name">Orange Package 1 | 1 bundle</span>
+          <span class="product-price">$30</span>
+          <span class="product-name">Seabass 1KG</span>
         </div>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-id="murray-cod-1kg-2" data-name="Murry Cod 1KG" data-price="32" data-image="images/e0c689df5feaf746e75041147fc78227b005e4c4.png">
         <div class="product-img-container">
-          <img src="images/22_1032.svg" class="product-img placeholder-svg" alt="Orange Package 1">
+          <img src="images/e0c689df5feaf746e75041147fc78227b005e4c4.png" class="product-img" alt="Murry Cod 1KG">
         </div>
-        <button class="add-btn blue">
-          <img src="images/22_1045.svg" alt="Add">
+        <button class="add-btn green">
+          <img src="images/22_1005.svg" alt="Add">
         </button>
         <div class="product-info">
-          <span class="product-price">$325</span>
-          <span class="product-name">Orange Package 1 | 1 bundle</span>
+          <span class="product-price">$32</span>
+          <span class="product-name">Murry Cod 1KG</span>
         </div>
       </div>
 
