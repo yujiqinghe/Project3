@@ -158,4 +158,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     syncButton(card);
   });
+
+  // Hero Slider
+  const heroBanners = document.querySelectorAll('.hero-banner');
+  const heroDots = document.querySelectorAll('#section-hero .dot');
+  if (heroBanners.length && heroDots.length) {
+    let currentHero = 0;
+    let heroInterval;
+
+    function showHeroSlide(index) {
+      heroBanners.forEach((b, i) => b.classList.toggle('active', i === index));
+      heroDots.forEach((d, i) => d.classList.toggle('active', i === index));
+      currentHero = index;
+    }
+
+    function nextHeroSlide() {
+      showHeroSlide((currentHero + 1) % heroBanners.length);
+    }
+
+    heroDots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        showHeroSlide(i);
+        clearInterval(heroInterval);
+        heroInterval = setInterval(nextHeroSlide, 4000);
+      });
+    });
+
+    heroInterval = setInterval(nextHeroSlide, 4000);
+  }
 });

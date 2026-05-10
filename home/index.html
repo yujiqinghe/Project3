@@ -88,11 +88,18 @@
 .hero-wrapper {
     padding: 16px 24px;
   }
+  .hero-slider {
+    position: relative;
+  }
   .hero-banner {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
     height: 189px;
+    display: none;
+  }
+  .hero-banner.active {
+    display: block;
   }
   .hero-img {
     width: 100%;
@@ -140,6 +147,17 @@
   .icon-arrow {
     width: 16px;
     height: 16px;
+  }
+  .hero-light .hero-title,
+  .hero-light .hero-subtitle,
+  .hero-light .shop-now-btn {
+    color: #ffffff;
+  }
+  .hero-light .shop-now-btn {
+    border-color: #ffffff;
+  }
+  .hero-light .icon-arrow {
+    filter: brightness(0) invert(1);
   }
   .pagination {
     display: flex;
@@ -206,20 +224,32 @@
 </section>
 <section id="section-hero" class="section-container">
   <div class="hero-wrapper">
-    <div class="hero-banner">
-      <img src="images/8b33bbbb07e7cb908d555017a8d0f2265df98938.png" class="hero-img" alt="Hero Banner">
-      <div class="hero-content">
-        <h2 class="hero-title">50-40% OFF</h2>
-        <p class="hero-subtitle">Now in Red Mullet</p>
-        <button class="shop-now-btn">
-          Shop Now
-          <img src="images/I22_964_25_541.svg" class="icon-arrow" alt="Arrow">
-        </button>
+    <div class="hero-slider">
+      <div class="hero-banner active">
+        <img src="images/8b33bbbb07e7cb908d555017a8d0f2265df98938.png" class="hero-img" alt="Hero Banner">
+        <div class="hero-content">
+          <h2 class="hero-title">50-40% OFF</h2>
+          <p class="hero-subtitle">Now in Red Mullet</p>
+          <button class="shop-now-btn">
+            Shop Now
+            <img src="images/I22_964_25_541.svg" class="icon-arrow" alt="Arrow">
+          </button>
+        </div>
+      </div>
+      <div class="hero-banner hero-light">
+        <img src="images/img.png" class="hero-img" alt="Pork Belly">
+        <div class="hero-content">
+          <h2 class="hero-title">30% OFF</h2>
+          <p class="hero-subtitle">Now in Pork Belly</p>
+          <button class="shop-now-btn">
+            Shop Now
+            <img src="images/I22_964_25_541.svg" class="icon-arrow" alt="Arrow">
+          </button>
+        </div>
       </div>
     </div>
     <div class="pagination">
       <div class="dot active"></div>
-      <div class="dot"></div>
       <div class="dot"></div>
     </div>
   </div>

@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="fix minor bugs on price">
+      <change afterPath="$PROJECT_DIR$/home/images/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +101,8 @@
       <workItem from="1778237044852" duration="4576000" />
       <workItem from="1778241760892" duration="3710000" />
       <workItem from="1778247650676" duration="381000" />
+      <workItem from="1778380118869" duration="924000" />
+      <workItem from="1778381224762" duration="346000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
