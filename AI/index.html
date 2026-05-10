@@ -185,6 +185,21 @@
   width: 16px;
   height: 16px;
 }
+
+  @media (min-width: 768px) {
+    #section-header {
+      border-radius: 16px 16px 0 0;
+    }
+    #section-input {
+      border-radius: 0 0 16px 16px;
+    }
+    #section-chat {
+      height: calc(100vh - 72px - 68px);
+    }
+    .message-content {
+      max-width: min(600px, 70vw);
+    }
+  }
   </style>
   <script src="global.js" defer></script>
 </head>

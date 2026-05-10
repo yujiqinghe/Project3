@@ -1,8 +1,11 @@
+html {
+  background-color: #ffffff;
+}
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -16,7 +19,24 @@ section {
 
 .mobile-container {
   width: 100%;
-  max-width: 390px;
+  max-width: clamp(320px, 90vw, 800px);
   background-color: #ffffff;
   box-sizing: border-box;
+}
+
+/* Mobile optimization */
+@media (max-width: 480px) {
+  body {
+    background-color: #ffffff;
+  }
+  .mobile-container {
+    max-width: 100%;
+  }
+}
+
+/* PC optimization */
+@media (min-width: 768px) {
+  .mobile-container {
+    box-shadow: none;
+  }
 }

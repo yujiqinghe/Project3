@@ -159,31 +159,71 @@ document.addEventListener('DOMContentLoaded', () => {
     syncButton(card);
   });
 
-  // Hero Slider
+  // Hero Slider (same auto-rotate + dot clicks on mobile and desktop)
   const heroBanners = document.querySelectorAll('.hero-banner');
   const heroDots = document.querySelectorAll('#section-hero .dot');
+
   if (heroBanners.length && heroDots.length) {
     let currentHero = 0;
-    let heroInterval;
+    let heroInterval = null;
+
+    function clearHeroInterval() {
+      if (heroInterval) {
+        clearInterval(heroInterval);
+        heroInterval = null;
+      }
+    }
 
     function showHeroSlide(index) {
-      heroBanners.forEach((b, i) => b.classList.toggle('active', i === index));
-      heroDots.forEach((d, i) => d.classList.toggle('active', i === index));
-      currentHero = index;
+      currentHero = ((index % heroBanners.length) + heroBanners.length) % heroBanners.length;
+      heroBanners.forEach((b, i) => b.classList.toggle('active', i === currentHero));
+      heroDots.forEach((d, i) => {
+        if (i >= heroBanners.length) return;
+        d.classList.toggle('active', i === currentHero);
+      });
     }
 
     function nextHeroSlide() {
-      showHeroSlide((currentHero + 1) % heroBanners.length);
+      showHeroSlide(currentHero + 1);
+    }
+
+    function startHeroSlider() {
+      clearHeroInterval();
+      heroInterval = setInterval(nextHeroSlide, 4000);
     }
 
     heroDots.forEach((dot, i) => {
       dot.addEventListener('click', () => {
+        if (i >= heroBanners.length) return;
         showHeroSlide(i);
-        clearInterval(heroInterval);
+        clearHeroInterval();
         heroInterval = setInterval(nextHeroSlide, 4000);
       });
     });
 
-    heroInterval = setInterval(nextHeroSlide, 4000);
+    showHeroSlide(0);
+    startHeroSlider();
   }
+
+  // Sidebar toggle
+  const menuBtn = document.getElementById('menu-btn');
+  const sidebarOverlay = document.getElementById('sidebar-overlay');
+  const sidebarPanel = document.getElementById('sidebar-panel');
+  const sidebarClose = document.getElementById('sidebar-close');
+
+  function openSidebar() {
+    sidebarOverlay.classList.add('active');
+    sidebarPanel.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSidebar() {
+    sidebarOverlay.classList.remove('active');
+    sidebarPanel.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  if (menuBtn) menuBtn.addEventListener('click', openSidebar);
+  if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
+  if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebar);
 });

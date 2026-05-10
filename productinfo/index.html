@@ -130,6 +130,34 @@
   justify-content: center;
   z-index: 2;
 }
+
+  @media (min-width: 768px) {
+    .product-container {
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      padding: 20px 40px 40px;
+      align-items: flex-start;
+    }
+    .image-wrapper {
+      flex: 1;
+      max-width: 500px;
+      margin-bottom: 0;
+    }
+    .info-wrapper {
+      flex: 1;
+      justify-content: center;
+    }
+    .title {
+      font-size: 36px;
+    }
+    .price {
+      font-size: 40px;
+    }
+    .desc {
+      font-size: 16px;
+    }
+  }
   </style>
   <script src="global.js" defer></script>
 </head>

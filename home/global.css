@@ -1,11 +1,18 @@
+html {
+  background-color: #ffffff;
+  overflow-y: auto;
+}
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .section-container {
@@ -81,6 +88,9 @@ button {
 .add-btn.green {
   background-color: #b9d133;
 }
+.add-btn--pork {
+  background-color: #ff6b6b;
+}
 .add-btn.blue {
   background-color: #2a4ba0;
 }
@@ -139,4 +149,305 @@ button {
   color: #1e222b;
   min-width: 18px;
   text-align: center;
+}
+
+/* Laptop shell + category row (reference: laptop-adaption App.tsx) */
+.home-page {
+  width: 100%;
+}
+
+.home-categories-grid {
+  display: block;
+}
+
+.pc-nav {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: #ffffff;
+    align-items: stretch;
+  }
+  .section-container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    align-items: center;
+  }
+
+  .home-page {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #ffffff;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  .home-page .section-container {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .home-page .menu-btn {
+    display: none !important;
+  }
+
+  .home-page .site-header {
+    position: relative;
+    padding: 0;
+    padding-top: 120px;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .home-page .header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .home-page .header-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    padding: 0 48px;
+    margin-top: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .home-page .logo {
+    height: 48px;
+  }
+
+  .home-page .icon-cart {
+    width: 36px;
+    height: 36px;
+  }
+
+  .home-page .pc-nav {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #f1f1f1;
+    min-height: 48px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 12px 48px;
+    box-sizing: border-box;
+  }
+
+  .home-page .pc-nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #4f5b67;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .home-page .pc-nav-link:hover {
+    background-color: #f9fafb;
+  }
+
+  .home-page .search-bar {
+    position: relative;
+    z-index: 2;
+    margin: 16px 48px 0;
+    width: auto;
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+    padding: 10px 24px;
+    height: auto;
+    min-height: 48px;
+    box-sizing: border-box;
+  }
+
+  .home-page .search-input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+
+  .home-page .icon-search {
+    width: 32px;
+    height: 32px;
+  }
+
+  #section-hero .hero-wrapper {
+    padding: 16px 48px 0;
+    box-sizing: border-box;
+  }
+
+  #section-hero .hero-banner {
+    height: 140px;
+    border-radius: 16px;
+  }
+
+  #section-hero .hero-content {
+    padding: 0 40px;
+    justify-content: center;
+  }
+
+  #section-hero .hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  #section-hero .hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  #section-hero .shop-now-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-width: 2px;
+    border-radius: 8px;
+    gap: 8px;
+  }
+
+  #section-hero .pagination {
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  #section-hero .pagination .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #abb7c2;
+  }
+
+  #section-hero .pagination .dot.active {
+    width: 32px;
+    height: 6px;
+    border-radius: 9999px;
+    background-color: #000000;
+  }
+
+  .home-categories-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 0 48px 48px;
+    box-sizing: border-box;
+    align-items: start;
+  }
+
+  .home-categories-grid .category-wrapper {
+    padding: 0;
+  }
+
+  .home-categories-grid .category-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .home-categories-grid .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .home-categories-grid .product-card {
+    border-radius: 12px;
+    padding: 16px;
+    transition: box-shadow 0.2s ease;
+    gap: 8px;
+    min-height: 0;
+  }
+
+  .home-categories-grid .product-card:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+  }
+
+  .home-categories-grid .product-img-container {
+    margin-bottom: 12px;
+    opacity: 0.85;
+  }
+
+  .home-categories-grid .product-img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+  }
+
+  .home-categories-grid .add-btn {
+    position: static;
+    width: 28px;
+    height: 28px;
+    border-radius: 12px;
+    margin-top: 12px;
+    margin-left: auto;
+    order: 3;
+    flex-shrink: 0;
+  }
+
+  .home-categories-grid .add-btn img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .home-categories-grid .product-img-container {
+    order: 1;
+  }
+
+  .home-categories-grid .product-info {
+    order: 2;
+    margin-top: auto;
+    min-width: 0;
+  }
+
+  .home-categories-grid .qty-stepper {
+    position: static;
+    order: 3;
+    margin-top: 12px;
+    margin-left: auto;
+    align-self: flex-end;
+  }
+
+  .home-categories-grid .product-name {
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 0;
+  }
+
+  .home-categories-grid .product-price {
+    font-family: 'Manrope', sans-serif;
+  }
 }

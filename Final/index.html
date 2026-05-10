@@ -20,7 +20,7 @@
 
 .app-container {
     width: 100%;
-    max-width: 390px; /* Based on Figma root frame width */
+    max-width: clamp(320px, 90vw, 600px); /* Fluid width */
     background-color: #ffffff;
     min-height: 844px; /* Based on Figma root frame height */
     position: relative;
@@ -28,7 +28,6 @@
     padding-top: 126px;
     padding-left: 24px;
     padding-right: 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     overflow: hidden;
 }
 
@@ -55,11 +54,23 @@
     width: fit-content;
 }
 
-/* Responsive adjustments for smaller mobile devices */
-@media (max-width: 390px) {
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
     .app-container {
+        max-width: 100%;
         min-height: 100vh;
         box-shadow: none;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* PC optimization */
+@media (min-width: 768px) {
+    .app-container {
+        min-height: 100vh;
+        padding-left: 48px;
+        padding-right: 48px;
     }
 }
   </style>

@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="fix minor bugs on price">
-      <change afterPath="$PROJECT_DIR$/home/images/img.png" afterDir="false" />
+    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="ADD clickble banner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/AI/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/Final/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sidebar/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sidebar/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sidebar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sidebar/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/cart/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comfirmation/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comfirmation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/product/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productinfo/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/productinfo/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productinfo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/productinfo/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,17 +77,17 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;qoder.settings.plugin&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Project3\.continue" />
       <recent name="C:\Users\Yiqi\Desktop\总目录-兆衍\MELB\INFO20005\Project3\productinfo" />
       <recent name="C:\Users\Yiqi\Desktop\总目录-兆衍\MELB\INFO20005\Project3\AI" />
       <recent name="C:\Users\Yiqi\Desktop\总目录-兆衍\MELB\INFO20005\Project3\comfirmation" />
       <recent name="C:\Users\Yiqi\Desktop\总目录-兆衍\MELB\INFO20005\Project3\cart" />
-      <recent name="C:\Users\Yiqi\Desktop\总目录-兆衍\MELB\INFO20005\Project3\product" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -102,7 +116,13 @@
       <workItem from="1778241760892" duration="3710000" />
       <workItem from="1778247650676" duration="381000" />
       <workItem from="1778380118869" duration="924000" />
-      <workItem from="1778381224762" duration="346000" />
+      <workItem from="1778381224762" duration="5582000" />
+      <workItem from="1778389706768" duration="403000" />
+      <workItem from="1778390258858" duration="151000" />
+      <workItem from="1778390730856" duration="238000" />
+      <workItem from="1778390983922" duration="297000" />
+      <workItem from="1778391292501" duration="73000" />
+      <workItem from="1778391428993" duration="1875000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -136,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778243220545</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ADD clickble banner">
+      <option name="closed" value="true" />
+      <created>1778381866000</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1778381866000</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +198,7 @@
     <MESSAGE value="shopping cart initial" />
     <MESSAGE value="shopping cart add price calculation" />
     <MESSAGE value="fix minor bugs on price" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix minor bugs on price" />
+    <MESSAGE value="ADD clickble banner" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD clickble banner" />
   </component>
 </project>

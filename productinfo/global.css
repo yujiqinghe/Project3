@@ -1,15 +1,17 @@
+html {
+  background-color: #ffffff;
+}
 body {
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
   padding: 0;
-  max-width: 390px;
+  max-width: clamp(320px, 90vw, 1200px);
   background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -19,4 +21,19 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Mobile optimization */
+@media (max-width: 480px) {
+  body {
+    max-width: 100%;
+    box-shadow: none;
+  }
+}
+
+/* PC optimization */
+@media (min-width: 768px) {
+  body {
+    box-shadow: none;
+  }
 }

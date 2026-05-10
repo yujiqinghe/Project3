@@ -123,6 +123,50 @@
   .checkout-btn:hover {
     opacity: 0.9;
   }
+
+  @media (max-width: 480px) {
+    body {
+      position: relative;
+    }
+    .cart-items {
+      left: 16px;
+      right: 16px;
+      bottom: 260px;
+    }
+    .checkout-sheet {
+      left: 10px;
+      width: calc(100% - 20px);
+      bottom: 10px;
+    }
+    .line {
+      left: 16px;
+      width: calc(100% - 32px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .cart-title {
+      left: 40px;
+      font-size: 32px;
+    }
+    .cart-items {
+      left: 40px;
+      right: 40px;
+      top: 120px;
+      bottom: 260px;
+    }
+    .checkout-sheet {
+      left: 40px;
+      width: calc(100% - 80px);
+      bottom: 24px;
+    }
+    .line {
+      left: 40px;
+      width: calc(100% - 80px);
+    }
+    .line-1 { top: 400px; }
+    .line-2 { top: 560px; }
+  }
   </style>
   <script src="global.js" defer></script>
 </head>
