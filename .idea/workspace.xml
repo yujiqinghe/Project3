@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="ADD clickble banner">
+    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="Laptoplize the home page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/AI/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/Final/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sidebar/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sidebar/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sidebar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sidebar/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/cart/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comfirmation/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comfirmation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/product/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productinfo/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/productinfo/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productinfo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/productinfo/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +108,8 @@
       <workItem from="1778390730856" duration="238000" />
       <workItem from="1778390983922" duration="297000" />
       <workItem from="1778391292501" duration="73000" />
-      <workItem from="1778391428993" duration="1875000" />
+      <workItem from="1778391428993" duration="3102000" />
+      <workItem from="1778674257050" duration="2295000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -164,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778381866000</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Laptoplize the home page">
+      <option name="closed" value="true" />
+      <created>1778400193287</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1778400193287</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +194,7 @@
     <MESSAGE value="shopping cart add price calculation" />
     <MESSAGE value="fix minor bugs on price" />
     <MESSAGE value="ADD clickble banner" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD clickble banner" />
+    <MESSAGE value="Laptoplize the home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laptoplize the home page" />
   </component>
 </project>
