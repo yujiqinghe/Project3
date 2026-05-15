@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="Laptoplize the home page">
+    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="add images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/product/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/Final/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/Final/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/cart/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/cart/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comfirmation/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comfirmation/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comfirmation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +76,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Project3\laptop-adaption3" />
       <recent name="C:\Project3\.continue" />
       <recent name="C:\Users\Yiqi\Desktop\总目录-兆衍\MELB\INFO20005\Project3\productinfo" />
       <recent name="C:\Users\Yiqi\Desktop\总目录-兆衍\MELB\INFO20005\Project3\AI" />
       <recent name="C:\Users\Yiqi\Desktop\总目录-兆衍\MELB\INFO20005\Project3\comfirmation" />
-      <recent name="C:\Users\Yiqi\Desktop\总目录-兆衍\MELB\INFO20005\Project3\cart" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -109,7 +116,9 @@
       <workItem from="1778390983922" duration="297000" />
       <workItem from="1778391292501" duration="73000" />
       <workItem from="1778391428993" duration="3102000" />
-      <workItem from="1778674257050" duration="2295000" />
+      <workItem from="1778674257050" duration="3222000" />
+      <workItem from="1778721164704" duration="4833000" />
+      <workItem from="1778856835066" duration="1364000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -159,7 +168,23 @@
       <option name="project" value="LOCAL" />
       <updated>1778400193287</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adapt product page, and fix side bar bugs">
+      <option name="closed" value="true" />
+      <created>1778676661627</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1778676661627</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add images">
+      <option name="closed" value="true" />
+      <created>1778677180838</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1778677180838</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +220,8 @@
     <MESSAGE value="fix minor bugs on price" />
     <MESSAGE value="ADD clickble banner" />
     <MESSAGE value="Laptoplize the home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laptoplize the home page" />
+    <MESSAGE value="Adapt product page, and fix side bar bugs" />
+    <MESSAGE value="add images" />
+    <option name="LAST_COMMIT_MESSAGE" value="add images" />
   </component>
 </project>

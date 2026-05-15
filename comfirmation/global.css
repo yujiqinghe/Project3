@@ -10,33 +10,19 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
 section {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
 .mobile-container {
   width: 100%;
   max-width: clamp(320px, 90vw, 800px);
   background-color: #ffffff;
   box-sizing: border-box;
 }
-
-/* Mobile optimization */
 @media (max-width: 480px) {
-  body {
-    background-color: #ffffff;
-  }
   .mobile-container {
     max-width: 100%;
-  }
-}
-
-/* PC optimization */
-@media (min-width: 768px) {
-  .mobile-container {
-    box-shadow: none;
   }
 }

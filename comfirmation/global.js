@@ -18,38 +18,38 @@ function formatPrice(price) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  var cart = getCart();
+  if (window.matchMedia('(min-width: 1024px)').matches) {
+    window.location.replace('../cart/index.html');
+    return;
+  }
 
-  // Calculate subtotal from all cart items
+  var cart = getCart();
   var subtotal = 0;
   for (var i = 0; i < cart.length; i++) {
     var item = cart[i];
-    var price = Number(item.price) || 0;
-    var qty = Number(item.quantity) || 0;
-    subtotal += price * qty;
+    subtotal += (Number(item.price) || 0) * (Number(item.quantity) || 0);
   }
   var total = subtotal + DELIVERY_FEE;
 
-  // Update DOM elements
-  var subtotalEl = document.getElementById('summary-subtotal');
-  var deliveryEl = document.getElementById('summary-delivery');
-  var totalEl = document.getElementById('summary-total');
+  var subtotalEl = document.getElementById('summary-subtotal-mobile');
+  var deliveryEl = document.getElementById('summary-delivery-mobile');
+  var totalEl = document.getElementById('summary-total-mobile');
 
   if (subtotalEl) subtotalEl.textContent = formatPrice(subtotal);
   if (deliveryEl) deliveryEl.textContent = formatPrice(DELIVERY_FEE);
   if (totalEl) totalEl.textContent = formatPrice(total);
 
-  // Check Out button: clear cart and go to Final page
-  var checkoutBtn = document.querySelector('.checkout-btn');
+  var checkoutBtn = document.getElementById('checkout-btn-mobile');
   if (checkoutBtn) {
     checkoutBtn.addEventListener('click', function() {
       if (cart.length === 0) {
         alert('Your cart is empty! Please add items before checking out.');
         return;
       }
-      // Clear the cart
+      try {
+        sessionStorage.setItem('kfl_last_order_total', formatPrice(total));
+      } catch (e) { /* ignore */ }
       localStorage.removeItem(CART_KEY);
-      // Navigate to order success page
       window.location.href = '../Final/index.html';
     });
   }

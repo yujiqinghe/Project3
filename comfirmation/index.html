@@ -3,40 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generated Page</title>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Checkout — KFL Supermarket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="global.css">
   <style id="sections-styles">
-/* CSS for section section:Header */
+.checkout-mobile-only {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 #section-header .header-container {
   padding: 20px 15px 10px;
   height: 61px;
 }
-
 #section-header .back-btn {
   width: 23px;
   height: 41px;
   display: block;
   cursor: pointer;
 }
-
-/* CSS for section section:Address */
 #section-address .address-container {
   padding: 0 31px;
 }
-
-#section-address .section-title {
+#section-address .section-title,
+#section-payment .section-title {
   font-size: 16px;
   color: #1e222b;
   margin: 0 0 14px 2px;
   font-weight: 500;
   line-height: 20px;
 }
-
 #section-address .info-card {
   border: 2px solid #f9b023;
   border-radius: 12px;
@@ -48,49 +46,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
-#section-address .card-label {
-  font-size: 14px;
-  color: #1e222b;
-  line-height: 20px;
-}
-
-#section-address .card-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#section-address .detail-text {
-  font-size: 14px;
-  color: #000000;
-  line-height: 20px;
-}
-
-#section-address .edit-btn {
-  color: #2a4ba0;
-  font-size: 14px;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  line-height: 16px;
-  font-weight: 500;
-}
-
-/* CSS for section section:Payment */
 #section-payment .payment-container {
   padding: 0 31px;
 }
-
-#section-payment .section-title {
-  font-size: 16px;
-  color: #1e222b;
-  margin: 0 0 14px 2px;
-  font-weight: 500;
-  line-height: 20px;
-}
-
 #section-payment .info-card {
   border: 2px solid #f9b023;
   border-radius: 12px;
@@ -103,26 +61,22 @@
   justify-content: space-between;
   background-color: #f7f7fb;
 }
-
-#section-payment .card-label {
+.card-label {
   font-size: 14px;
   color: #1e222b;
   line-height: 20px;
 }
-
-#section-payment .card-details {
+.card-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-#section-payment .detail-text {
+.detail-text {
   font-size: 14px;
   color: #000000;
   line-height: 20px;
 }
-
-#section-payment .edit-btn {
+.edit-btn {
   color: #2a4ba0;
   font-size: 14px;
   background: none;
@@ -132,12 +86,9 @@
   line-height: 16px;
   font-weight: 500;
 }
-
-/* CSS for section section:Summary */
 #section-summary {
   flex: 1;
 }
-
 #section-summary .summary-wrapper {
   padding: 0 15px 15px;
   height: 100%;
@@ -145,41 +96,35 @@
   flex-direction: column;
   justify-content: flex-end;
 }
-
 #section-summary .summary-container {
   background-color: #f8f9fb;
   border-radius: 30px;
   height: 266px;
-  padding: 17px 36px 69px; 
+  padding: 17px 36px 69px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-
 #section-summary .summary-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 #section-summary .summary-row.subtotal { margin-bottom: 13px; }
 #section-summary .summary-row.delivery { margin-bottom: 16px; }
 #section-summary .summary-row.total { margin-bottom: 35px; }
-
 #section-summary .summary-label {
   color: #616a7d;
   font-size: 14px;
   line-height: 20px;
 }
-
 #section-summary .summary-value {
   color: #1e222b;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
 }
-
 #section-summary .checkout-btn {
   background-color: #b9d133;
   color: #ffffff;
@@ -194,81 +139,73 @@
   justify-content: center;
   align-items: center;
 }
-
-  @media (min-width: 768px) {
-    .mobile-container {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-    .header-container {
-      padding: 24px 60px 16px;
-    }
-    .address-container, .payment-container {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-    .summary-wrapper {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-    .summary-container {
-      height: auto;
-      padding: 24px 48px 32px;
-    }
+@media (max-width: 480px) {
+  .mobile-container {
+    max-width: 100%;
   }
+}
   </style>
+  <script>
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      window.location.replace('../cart/index.html');
+    }
+  </script>
   <script src="global.js" defer></script>
 </head>
 <body>
-<section id="section-header">
-  <div class="mobile-container header-container">
-    <a href="../cart/index.html" aria-label="Go back">
-      <img src="images/662263963a09ad97a79e16d938e1ce636afde565.png" alt="Back" class="back-btn">
-    </a>
+<div class="checkout-page">
+  <div class="checkout-mobile-only">
+    <section id="section-header">
+      <div class="mobile-container header-container">
+        <a href="../cart/index.html" aria-label="Go back">
+          <img src="images/662263963a09ad97a79e16d938e1ce636afde565.png" alt="Back" class="back-btn">
+        </a>
+      </div>
+    </section>
+    <section id="section-address">
+      <div class="mobile-container address-container">
+        <h2 class="section-title">Delivery Address</h2>
+        <div class="info-card">
+          <div class="card-label">Home</div>
+          <div class="card-details">
+            <span class="detail-text">36 green way, Sunbury</span>
+            <button type="button" class="edit-btn">Edit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-payment">
+      <div class="mobile-container payment-container">
+        <h2 class="section-title">Card Details</h2>
+        <div class="info-card">
+          <div class="card-label">Visa</div>
+          <div class="card-details">
+            <span class="detail-text">XXXXXXX</span>
+            <button type="button" class="edit-btn">Edit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-summary">
+      <div class="mobile-container summary-wrapper">
+        <div class="summary-container">
+          <div class="summary-row subtotal">
+            <span class="summary-label">Subtotal</span>
+            <span class="summary-value" id="summary-subtotal-mobile">$0.00</span>
+          </div>
+          <div class="summary-row delivery">
+            <span class="summary-label">Delivery</span>
+            <span class="summary-value" id="summary-delivery-mobile">$2.00</span>
+          </div>
+          <div class="summary-row total">
+            <span class="summary-label">Total</span>
+            <span class="summary-value" id="summary-total-mobile">$0.00</span>
+          </div>
+          <button type="button" class="checkout-btn" id="checkout-btn-mobile">Check Out</button>
+        </div>
+      </div>
+    </section>
   </div>
-</section>
-<section id="section-address">
-  <div class="mobile-container address-container">
-    <h2 class="section-title">Delivery Address</h2>
-    <div class="info-card">
-      <div class="card-label">Home</div>
-      <div class="card-details">
-        <span class="detail-text">36 green way, Sunbury</span>
-        <button class="edit-btn">Edit</button>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="section-payment">
-  <div class="mobile-container payment-container">
-    <h2 class="section-title">Card Details</h2>
-    <div class="info-card bg-light">
-      <div class="card-label">Visa</div>
-      <div class="card-details">
-        <span class="detail-text">XXXXXXX</span>
-        <button class="edit-btn">Edit</button>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="section-summary">
-  <div class="mobile-container summary-wrapper">
-    <div class="summary-container">
-      <div class="summary-row subtotal">
-        <span class="summary-label">Subtotal</span>
-        <span class="summary-value" id="summary-subtotal">$0.00</span>
-      </div>
-      <div class="summary-row delivery">
-        <span class="summary-label">Delivery</span>
-        <span class="summary-value" id="summary-delivery">$2.00</span>
-      </div>
-      <div class="summary-row total">
-        <span class="summary-label">Total</span>
-        <span class="summary-value" id="summary-total">$0.00</span>
-      </div>
-      <button class="checkout-btn">Check Out</button>
-    </div>
-  </div>
-</section>
+</div>
 </body>
 </html>
