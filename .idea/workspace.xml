@@ -6,16 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="add images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/Final/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/Final/global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/cart/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/cart/global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comfirmation/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comfirmation/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comfirmation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/product/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +113,7 @@
       <workItem from="1778674257050" duration="3222000" />
       <workItem from="1778721164704" duration="4833000" />
       <workItem from="1778856835066" duration="1364000" />
+      <workItem from="1778900150374" duration="2692000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />

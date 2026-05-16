@@ -279,27 +279,53 @@ button {
 
   .home-page .search-bar {
     position: relative;
-    z-index: 2;
     margin: 16px 48px 0;
-    width: auto;
+    width: 500px;
+    max-width: 100%;
     background: #ffffff;
     border: 2px solid #000000;
     border-radius: 9999px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
-    padding: 10px 24px;
-    height: auto;
-    min-height: 48px;
+    padding: 0;
+    height: 48px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
   }
 
   .home-page .search-input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    padding: 0 48px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    outline: none;
+    color: #000000;
+    z-index: 2;
   }
 
-  .home-page .icon-search {
-    width: 32px;
-    height: 32px;
+  .home-page .search-input:focus {
+    border-color: #b9d133;
+  }
+
+  .home-page .icon-search-svg {
+    position: absolute;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    color: #000000;
+    pointer-events: none;
+  }
+
+  .home-page .icon-ai {
+    position: absolute;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
   }
 
   #section-hero .hero-wrapper {
