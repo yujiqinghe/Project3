@@ -301,7 +301,9 @@
     <img src="images/3be9141e5e1b4cab097986e30a3927f787c4f7fa.png" class="header-bg" alt="Header Background">
     
     <div class="header-top">
-      <img src="images/04d4a0f6c7e1149d157bd30b53de1c9e65ca5113.png" class="logo" alt="KFL Supermarket">
+      <a href="index.html" aria-label="Home">
+        <img src="images/04d4a0f6c7e1149d157bd30b53de1c9e65ca5113.png" class="logo" alt="KFL Supermarket">
+      </a>
       <div class="header-actions">
         <a href="../cart/index.html" class="cart-link" aria-label="Shopping Cart">
           <img src="images/b9cfbe1d6eb32a6c5ac37ff59f12ec6048ff589f.png" class="icon-cart" alt="Cart">
@@ -370,11 +372,11 @@
   <div class="category-wrapper">
     <h2 class="category-title">Fish</h2>
     <div class="product-grid">
-      <div class="product-card" data-id="seabass-1kg" data-name="Seabass 1KG" data-price="30" data-image="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png">
+      <div class="product-card" data-id="seabass-1kg" data-name="Seabass 1KG" data-price="30" data-image="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" onclick="window.location.href='../productinfo/index.html'" style="cursor: pointer;">
         <div class="product-img-container">
           <img src="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" class="product-img" alt="Seabass 1KG">
         </div>
-        <button type="button" class="add-btn green" aria-label="Add Seabass 1KG">
+        <button type="button" class="add-btn green" aria-label="Add Seabass 1KG" onclick="event.stopPropagation();">
           <img src="images/22_986.svg" alt="">
         </button>
         <div class="product-info">

@@ -114,48 +114,201 @@
   display: inline-block;
   margin-left: auto;
 }
-.cart-badge {
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  background-color: #f9b023;
-  color: #ffffff;
-  font-size: 10px;
-  font-weight: 700;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
+    .cart-badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      background-color: #f9b023;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 700;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
 
-  @media (min-width: 768px) {
-    .product-container {
+    .qty-stepper {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      padding: 10px 0;
+    }
+    .qty-stepper.active {
       display: flex;
-      flex-direction: row;
-      gap: 48px;
-      padding: 20px 40px 40px;
-      align-items: flex-start;
     }
+    .qty-stepper-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid #d1d5db;
+      background-color: #ffffff;
+      color: #1e222b;
+      font-size: 24px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      line-height: 1;
+    }
+    .qty-stepper-count {
+      font-size: 20px;
+      font-weight: 600;
+      color: #1e222b;
+      min-width: 32px;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #section-header, #section-product, #section-footer {
+      width: 1440px;
+      max-width: 100%;
+      background-color: white;
+      box-sizing: border-box;
+    }
+
+    #section-header {
+      height: 80px;
+      border-bottom: 1px solid #f1f1f1;
+      padding: 0 48px;
+    }
+    
+    .header {
+      height: 100%;
+      padding: 0;
+      justify-content: space-between;
+    }
+
+    .back-btn {
+      gap: 12px;
+    }
+    
+    .back-btn::after {
+      content: 'Back to Products';
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #000;
+    }
+
+    #section-product {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 80px;
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
+      padding: 0;
+    }
+
     .image-wrapper {
-      flex: 1;
-      max-width: 500px;
       margin-bottom: 0;
+      border-radius: 24px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      aspect-ratio: 1 / 1;
     }
+
+    .product-img {
+      aspect-ratio: auto;
+      height: 100%;
+    }
+
     .info-wrapper {
-      flex: 1;
+      padding: 0;
       justify-content: center;
     }
+
     .title {
-      font-size: 36px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      margin-bottom: 16px;
     }
+
     .price {
-      font-size: 40px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 60px;
+      margin-bottom: 32px;
     }
+
     .desc {
+      font-family: 'Manrope', sans-serif;
       font-size: 16px;
+      line-height: 1.625;
+      color: #616a7d;
+      margin-bottom: 48px;
+    }
+
+    #section-footer {
+      display: none;
+    }
+
+    /* Add quantity selector and PC add to cart button inside info-wrapper for PC */
+    .pc-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .pc-actions .qty-stepper {
+      justify-content: flex-start;
+      padding: 0;
+      width: auto;
+      margin-top: 10px;
+    }
+
+    .pc-add-cart {
+      background-color: #b9d133;
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 20px 32px;
+      border-radius: 16px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s, transform 0.1s;
+      width: fit-content;
+    }
+
+    .pc-add-cart:hover {
+      background-color: #a3ba2c;
+    }
+
+    .pc-add-cart:active {
+      transform: scale(0.98);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .pc-actions {
+      display: none;
     }
   }
   </style>
@@ -173,23 +326,27 @@
     </a>
   </header>
 </section>
-<section id="section-product" data-id="sea-bass-fillet" data-name="Sea Bass Fillet" data-price="38.99" data-image="images/a8d9f4e6538b9b298ccb249c3857ee4e3ec907cd.png">
+<section id="section-product" data-id="seabass-1kg" data-name="Seabass 1KG" data-price="30.00" data-image="../home/images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png">
   <div class="product-container">
     <div class="image-wrapper">
-      <img src="images/a8d9f4e6538b9b298ccb249c3857ee4e3ec907cd.png" alt="Sea Bass" class="product-img">
+      <img src="../home/images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" alt="Seabass 1KG" class="product-img">
     </div>
     <div class="info-wrapper">
-      <h1 class="title">Sea Bass</h1>
-      <div class="price">$38.99</div>
+      <h1 class="title">Seabass 1KG</h1>
+      <div class="price">$30.00</div>
       <p class="desc">
         Premium Atlantic seabass fillet, carefully sourced from cold waters. Each portion is expertly cleaned and trimmed for perfect texture. Rich in omega-3 fatty acids with a delicate flavor profile that pairs beautifully with herbs and lemon. Perfect for grilling, pan-searing, or baking.
       </p>
+      
+      <div class="pc-actions action-container">
+        <button class="pc-add-cart add-btn-main">Add to cart</button>
+      </div>
     </div>
   </div>
 </section>
 <section id="section-footer">
-  <div class="footer-container">
-    <button class="btn-add-cart">Add to cart</button>
+  <div class="footer-container action-container">
+    <button class="btn-add-cart add-btn-main">Add to cart</button>
   </div>
 </section>
 </body>

@@ -260,7 +260,9 @@
   <section id="section-header-desktop" aria-label="Site header">
     <header class="header-desktop">
       <div class="header-desktop__left">
-        <img src="../home/images/04d4a0f6c7e1149d157bd30b53de1c9e65ca5113.png" alt="KFL Supermarket" class="header-desktop__logo" width="120" height="48">
+        <a href="../home/index.html" aria-label="Home">
+          <img src="../home/images/04d4a0f6c7e1149d157bd30b53de1c9e65ca5113.png" alt="KFL Supermarket" class="header-desktop__logo" width="120" height="48">
+        </a>
         <div class="search-bar">
           <svg class="icon-search-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="11" cy="11" r="8"></circle>
@@ -289,11 +291,11 @@
     <main class="product-main">
       <h1 class="product-title-desktop">Fish</h1>
       <div class="product-grid">
-        <div class="product-card" data-id="seabass-1kg" data-name="Seabass 1KG" data-price="30" data-image="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png">
+        <div class="product-card" data-id="seabass-1kg" data-name="Seabass 1KG" data-price="30" data-image="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" onclick="window.location.href='../productinfo/index.html'" style="cursor: pointer;">
           <div class="product-image-wrapper">
             <img src="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" alt="Seabass 1KG" class="product-image">
           </div>
-          <button type="button" class="add-btn" aria-label="Add Seabass 1KG to cart">
+          <button type="button" class="add-btn" aria-label="Add Seabass 1KG to cart" onclick="event.stopPropagation();">
             <img src="images/120_130.svg" alt="" class="add-btn__icon">
             <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
           </button>
