@@ -112,9 +112,9 @@ a {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  border: 1px solid #ebebfb;
-  background-color: #ffffff;
-  color: #1e222b;
+  border: none;
+  background-color: #b9d133;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -329,11 +329,11 @@ a {
   .purchase-desktop-qty-btn {
     width: 48px;
     height: 48px;
-    border-radius: 12px;
-    border: 2px solid #d1d5db;
-    background: #ffffff;
-    color: #1e222b;
-    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    background: #b9d133;
+    color: #ffffff;
+    font-size: 24px;
     font-weight: 600;
     cursor: pointer;
     display: flex;
@@ -341,7 +341,7 @@ a {
     justify-content: center;
     padding: 0;
     line-height: 1;
-    transition: border-color 0.2s ease;
+    transition: background-color 0.2s ease;
   }
 
   .purchase-desktop-qty-btn:hover {

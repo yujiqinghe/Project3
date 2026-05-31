@@ -176,13 +176,13 @@ button {
 
 @media (min-width: 1024px) {
   body {
-    align-items: center;
+    align-items: stretch;
   }
 
   .home-page {
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
     background: #ffffff;
     min-height: 100vh;
     box-sizing: border-box;
@@ -319,9 +319,18 @@ button {
     pointer-events: none;
   }
 
-  .home-page .icon-ai {
+  .home-page .ai-link {
     position: absolute;
     right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    z-index: 3;
+  }
+
+  .home-page .icon-ai {
     width: 24px;
     height: 24px;
     object-fit: contain;
