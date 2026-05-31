@@ -21,11 +21,23 @@
   left: 15px;
   z-index: 10;
 }
-.cart-mobile .back-icon {
-  width: 23px;
-  height: 41px;
+.cart-mobile .back-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  margin-left: -10px; /* Offset the padding to keep alignment */
+}
+.cart-mobile .back-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.cart-mobile .back-icon-svg {
+  width: 28px;
+  height: 28px;
   display: block;
-  object-fit: contain;
 }
 .cart-mobile .cart-title {
   position: absolute;
@@ -134,8 +146,10 @@
   <div class="cart-mobile cart-mobile-only">
     <section id="section-header">
       <header class="app-header">
-        <a href="../home/index.html" aria-label="Go back">
-          <img src="images/662263963a09ad97a79e16d938e1ce636afde565.png" alt="Back" class="back-icon">
+        <a href="../home/index.html" aria-label="Go back" class="back-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#1e222b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="back-icon-svg">
+            <path d="m15 18-6-6 6-6"/>
+          </svg>
         </a>
       </header>
     </section>

@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="add images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productinfo/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/productinfo/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comfirmation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/comfirmation/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/productinfo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/productinfo/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +115,9 @@
       <workItem from="1778900150374" duration="2692000" />
       <workItem from="1778925556063" duration="5033000" />
       <workItem from="1779004708141" duration="342000" />
+      <workItem from="1779331825724" duration="1028000" />
+      <workItem from="1779368145465" duration="915000" />
+      <workItem from="1780243353775" duration="1659000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />

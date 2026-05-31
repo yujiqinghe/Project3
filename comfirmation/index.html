@@ -15,14 +15,27 @@
   min-height: 100vh;
 }
 #section-header .header-container {
-  padding: 20px 15px 10px;
+  padding: 20px 31px 10px;
   height: 61px;
+  box-sizing: border-box;
 }
-#section-header .back-btn {
-  width: 23px;
-  height: 41px;
+#section-header .back-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  margin-left: -10px;
+}
+#section-header .back-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#section-header .back-icon-svg {
+  width: 28px;
+  height: 28px;
   display: block;
-  cursor: pointer;
 }
 #section-address .address-container {
   padding: 0 31px;
@@ -157,8 +170,10 @@
   <div class="checkout-mobile-only">
     <section id="section-header">
       <div class="mobile-container header-container">
-        <a href="../cart/index.html" aria-label="Go back">
-          <img src="images/662263963a09ad97a79e16d938e1ce636afde565.png" alt="Back" class="back-btn">
+        <a href="../cart/index.html" aria-label="Go back" class="back-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#1e222b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="back-icon-svg">
+            <path d="m15 18-6-6 6-6"/>
+          </svg>
         </a>
       </div>
     </section>

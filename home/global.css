@@ -280,8 +280,8 @@ button {
   .home-page .search-bar {
     position: relative;
     margin: 16px 48px 0;
-    width: 500px;
-    max-width: 100%;
+    width: auto;
+    max-width: none;
     background: #ffffff;
     border: 2px solid #000000;
     border-radius: 9999px;

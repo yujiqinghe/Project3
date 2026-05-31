@@ -22,18 +22,25 @@
   align-items: center;
 }
 .back-btn {
-  background: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: -10px;
 }
-.back-btn img {
-  height: 24px;
-  width: auto;
-  object-fit: contain;
+.back-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.back-btn svg {
+  width: 28px;
+  height: 28px;
+  display: block;
 }
 
 /* CSS for section section:Product */
@@ -318,7 +325,9 @@
 <section id="section-header">
   <header class="header">
     <button class="back-btn" aria-label="Go back" onclick="history.back()">
-      <img src="images/662263963a09ad97a79e16d938e1ce636afde565.png" alt="Back">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#1e222b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m15 18-6-6 6-6"/>
+      </svg>
     </button>
     <a href="../cart/index.html" class="cart-link" aria-label="Shopping Cart">
       <img src="../home/images/b9cfbe1d6eb32a6c5ac37ff59f12ec6048ff589f.png" alt="Cart" style="width:41px;height:41px;object-fit:contain;">
