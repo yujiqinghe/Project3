@@ -16,22 +16,26 @@ body {
 
 section {
   width: 100%;
-  max-width: clamp(320px, 90vw, 1440px); /* Allow it to be wider on zoom */
+  max-width: none;
   box-sizing: border-box;
   margin: 0;
 }
 
 /* Ensure the whole app looks like a single card on desktop */
 #section-header {
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+  border-radius: 0;
   flex-shrink: 0;
 }
 
 #section-input {
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
+  border-radius: 0;
   flex-shrink: 0;
+}
+
+/* Remove circular corners specifically from section-header background */
+#section-header {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 #section-chat {
@@ -72,17 +76,17 @@ section {
 /* PC optimization */
 @media (min-width: 768px) {
   body {
-    padding: 24px;
+    padding: 0;
   }
   section {
-    max-width: 1440px; /* Take more width on PC */
+    max-width: none;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
   }
   #section-header {
-    border-radius: 16px 16px 0 0;
+    border-radius: 0;
   }
   #section-input {
-    border-radius: 0 0 16px 16px;
+    border-radius: 0;
   }
 }

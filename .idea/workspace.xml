@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="adjust search bar">
+    <list default="true" id="c9915bd0-ce2b-4fb4-8fe8-befe13970af6" name="Changes" comment="fix multiple issue detected in peer testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/AI/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AI/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AI/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +116,8 @@
       <workItem from="1779004708141" duration="342000" />
       <workItem from="1779331825724" duration="1028000" />
       <workItem from="1779368145465" duration="915000" />
-      <workItem from="1780243353775" duration="5741000" />
+      <workItem from="1780243353775" duration="6519000" />
+      <workItem from="1780761034577" duration="3077000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -193,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780245315446</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix multiple issue detected in peer testing">
+      <option name="closed" value="true" />
+      <created>1780253248203</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1780253248203</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +238,7 @@
     <MESSAGE value="Adapt product page, and fix side bar bugs" />
     <MESSAGE value="add images" />
     <MESSAGE value="adjust search bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust search bar" />
+    <MESSAGE value="fix multiple issue detected in peer testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix multiple issue detected in peer testing" />
   </component>
 </project>
