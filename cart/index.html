@@ -78,8 +78,10 @@
 .cart-mobile .checkout-sheet {
   position: absolute;
   bottom: 17px;
-  left: 15px;
-  width: 359px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 30px);
+  box-sizing: border-box;
   background-color: #f8f9fb;
   border-radius: 30px;
   display: flex;
@@ -129,7 +131,8 @@
     bottom: 260px;
   }
   .cart-mobile .checkout-sheet {
-    left: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     width: calc(100% - 20px);
     bottom: 10px;
   }
@@ -156,10 +159,6 @@
     <section id="section-content">
       <div class="cart-title">Shopping Cart</div>
       <div class="cart-items" id="cart-items-mobile"></div>
-      <div class="background-lines">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-      </div>
     </section>
     <section id="section-checkout">
       <div class="checkout-sheet">
@@ -194,7 +193,10 @@
           <h2 class="purchase-desktop-cart-heading">Your Cart</h2>
           <div class="purchase-desktop-items" id="cart-items-desktop"></div>
 
-          <section class="purchase-desktop-section">
+        </div>
+
+        <aside class="purchase-desktop-summary-col">
+          <section class="purchase-desktop-section" style="margin-top: 0;">
             <h2 class="purchase-desktop-section-title">Delivery Address</h2>
             <div class="purchase-desktop-card">
               <div class="purchase-desktop-card-inner">
@@ -210,7 +212,7 @@
             </div>
           </section>
 
-          <section class="purchase-desktop-section purchase-desktop-section--payment">
+          <section class="purchase-desktop-section purchase-desktop-section--payment" style="margin-top: 0;">
             <h2 class="purchase-desktop-section-title">Payment Method</h2>
             <div class="purchase-desktop-card purchase-desktop-card--payment">
               <div class="purchase-desktop-card-inner">
@@ -225,10 +227,8 @@
               </div>
             </div>
           </section>
-        </div>
 
-        <aside class="purchase-desktop-summary-col">
-          <div class="purchase-desktop-summary">
+          <div class="purchase-desktop-summary" style="top: 0;">
             <h2 class="purchase-desktop-summary-title">Order Summary</h2>
             <div class="purchase-desktop-summary-rows">
               <div class="purchase-desktop-summary-row">

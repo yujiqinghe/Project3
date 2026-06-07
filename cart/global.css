@@ -166,9 +166,22 @@ a {
   text-decoration: underline;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1023px) {
   .cart-page {
     max-width: 100%;
+  }
+  .cart-mobile .checkout-sheet {
+    border-radius: 30px;
+    padding: 24px 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: clamp(320px, 90vw, 900px);
+    box-sizing: border-box;
+  }
+  .cart-mobile .checkout-btn {
+    border-radius: 16px;
+    height: 52px;
+    width: 100%;
   }
 }
 
@@ -237,7 +250,7 @@ a {
     flex: 1;
     padding: 48px 64px;
     box-sizing: border-box;
-    overflow-y: auto;
+    overflow-y: visible;
   }
 
   .purchase-desktop-layout {
@@ -452,6 +465,9 @@ a {
   .purchase-desktop-summary-col {
     width: 420px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
   }
 
   .purchase-desktop-summary {

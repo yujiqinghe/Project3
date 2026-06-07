@@ -85,82 +85,86 @@
   cursor: pointer;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  padding: 16px 24px 32px;
-}
+@media (max-width: 1023px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px 24px 32px;
+  }
 
-.product-card {
-  background-color: #f8f9fb;
-  border-radius: 12px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  box-sizing: border-box;
-}
+  .product-card {
+    background-color: #f8f9fb;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-sizing: border-box;
+  }
 
-.product-image-wrapper {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 24px;
-}
+  .product-image-wrapper {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
 
-.product-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  opacity: 0.6;
-}
+  .product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0.6;
+  }
 
-.add-btn {
-  position: absolute;
-  right: 12px;
-  top: 90px;
-  width: 24px;
-  height: 24px;
-  background-color: #b9d133;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
+  .add-btn {
+    position: absolute;
+    right: 12px;
+    top: 90px;
+    width: 24px;
+    height: 24px;
+    background-color: #b9d133;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
 
-.add-btn__text {
-  display: none;
-}
+  .add-btn__text {
+    display: none;
+  }
 
-.add-btn__icon {
-  display: block;
-  width: 12px;
-  height: 12px;
-}
+  .add-btn__icon {
+    display: block;
+    width: 12px;
+    height: 12px;
+  }
 
-.product-info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-top: 0;
-}
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 0;
+  }
 
-.price {
-  color: #1e222b;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.2;
-}
+  .price {
+    color: #1e222b;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: 'Manrope', sans-serif;
+  }
 
-.name {
-  color: #616a7d;
-  font-size: 12px;
-  line-height: 1.4;
+  .name {
+    color: #616a7d;
+    font-size: 12px;
+    line-height: 1.25;
+    font-family: 'Manrope', sans-serif;
+  }
 }
 
 .cart-link {
@@ -299,112 +303,168 @@
           <div class="product-image-wrapper">
             <img src="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" alt="Seabass 1KG" class="product-image">
           </div>
-          <button type="button" class="add-btn" aria-label="Add Seabass 1KG to cart" onclick="event.stopPropagation();">
-            <img src="images/120_130.svg" alt="" class="add-btn__icon">
-            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
-          </button>
           <div class="product-info">
             <span class="price">$30</span>
             <span class="name">Seabass 1KG</span>
           </div>
-        </div>
-
-        <div class="product-card" data-id="murray-cod-1kg" data-name="Murry Cod 1KG" data-price="32" data-image="images/e0c689df5feaf746e75041147fc78227b005e4c4.png">
-          <div class="product-image-wrapper">
-            <img src="images/e0c689df5feaf746e75041147fc78227b005e4c4.png" alt="Murry Cod 1KG" class="product-image">
-          </div>
-          <button type="button" class="add-btn" aria-label="Add Murry Cod 1KG to cart">
+          <button type="button" class="add-btn" aria-label="Add Seabass 1KG to cart" onclick="event.stopPropagation();">
             <img src="images/120_130.svg" alt="" class="add-btn__icon">
             <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
           </button>
+        </div>
+
+        <div class="product-card" data-id="murray-cod-1kg" data-name="Murry Cod 1KG" data-price="32" data-image="images/e0c689df5feaf746e75041147fc78227b005e4c4.png" onclick="window.location.href='../productinfo/murray-cod.html'" style="cursor: pointer;">
+          <div class="product-image-wrapper">
+            <img src="images/e0c689df5feaf746e75041147fc78227b005e4c4.png" alt="Murry Cod 1KG" class="product-image">
+          </div>
           <div class="product-info">
             <span class="price">$32</span>
             <span class="name">Murry Cod 1KG</span>
           </div>
+          <button type="button" class="add-btn" aria-label="Add Murry Cod 1KG to cart" onclick="event.stopPropagation();">
+            <img src="images/120_130.svg" alt="" class="add-btn__icon">
+            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
+          </button>
         </div>
 
         <div class="product-card" data-id="salmon-1kg" data-name="Salmon 1KG" data-price="45" data-image="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png">
           <div class="product-image-wrapper">
             <img src="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" alt="Salmon 1KG" class="product-image">
           </div>
-          <button type="button" class="add-btn" aria-label="Add Salmon 1KG to cart">
-            <img src="images/120_130.svg" alt="" class="add-btn__icon">
-            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
-          </button>
           <div class="product-info">
             <span class="price">$45</span>
             <span class="name">Salmon 1KG</span>
           </div>
+          <button type="button" class="add-btn" aria-label="Add Salmon 1KG to cart">
+            <img src="images/120_130.svg" alt="" class="add-btn__icon">
+            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
+          </button>
         </div>
 
         <div class="product-card" data-id="tuna-1kg" data-name="Tuna 1KG" data-price="38" data-image="images/e0c689df5feaf746e75041147fc78227b005e4c4.png">
           <div class="product-image-wrapper">
             <img src="images/e0c689df5feaf746e75041147fc78227b005e4c4.png" alt="Tuna 1KG" class="product-image">
           </div>
-          <button type="button" class="add-btn" aria-label="Add Tuna 1KG to cart">
-            <img src="images/120_130.svg" alt="" class="add-btn__icon">
-            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
-          </button>
           <div class="product-info">
             <span class="price">$38</span>
             <span class="name">Tuna 1KG</span>
           </div>
+          <button type="button" class="add-btn" aria-label="Add Tuna 1KG to cart">
+            <img src="images/120_130.svg" alt="" class="add-btn__icon">
+            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
+          </button>
         </div>
 
         <div class="product-card" data-id="barramundi-1kg" data-name="Barramundi 1KG" data-price="42" data-image="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png">
           <div class="product-image-wrapper">
             <img src="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" alt="Barramundi 1KG" class="product-image">
           </div>
-          <button type="button" class="add-btn" aria-label="Add Barramundi 1KG to cart">
-            <img src="images/120_130.svg" alt="" class="add-btn__icon">
-            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
-          </button>
           <div class="product-info">
             <span class="price">$42</span>
             <span class="name">Barramundi 1KG</span>
           </div>
+          <button type="button" class="add-btn" aria-label="Add Barramundi 1KG to cart">
+            <img src="images/120_130.svg" alt="" class="add-btn__icon">
+            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
+          </button>
         </div>
 
         <div class="product-card" data-id="snapper-1kg" data-name="Snapper 1KG" data-price="36" data-image="images/e0c689df5feaf746e75041147fc78227b005e4c4.png">
           <div class="product-image-wrapper">
             <img src="images/e0c689df5feaf746e75041147fc78227b005e4c4.png" alt="Snapper 1KG" class="product-image">
           </div>
-          <button type="button" class="add-btn" aria-label="Add Snapper 1KG to cart">
-            <img src="images/120_130.svg" alt="" class="add-btn__icon">
-            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
-          </button>
           <div class="product-info">
             <span class="price">$36</span>
             <span class="name">Snapper 1KG</span>
           </div>
+          <button type="button" class="add-btn" aria-label="Add Snapper 1KG to cart">
+            <img src="images/120_130.svg" alt="" class="add-btn__icon">
+            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
+          </button>
         </div>
 
         <div class="product-card" data-id="mackerel-1kg" data-name="Mackerel 1KG" data-price="28" data-image="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png">
           <div class="product-image-wrapper">
             <img src="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" alt="Mackerel 1KG" class="product-image">
           </div>
-          <button type="button" class="add-btn" aria-label="Add Mackerel 1KG to cart">
-            <img src="images/120_130.svg" alt="" class="add-btn__icon">
-            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
-          </button>
           <div class="product-info">
             <span class="price">$28</span>
             <span class="name">Mackerel 1KG</span>
           </div>
+          <button type="button" class="add-btn" aria-label="Add Mackerel 1KG to cart">
+            <img src="images/120_130.svg" alt="" class="add-btn__icon">
+            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
+          </button>
         </div>
 
         <div class="product-card" data-id="grouper-1kg" data-name="Grouper 1KG" data-price="50" data-image="images/e0c689df5feaf746e75041147fc78227b005e4c4.png">
           <div class="product-image-wrapper">
             <img src="images/e0c689df5feaf746e75041147fc78227b005e4c4.png" alt="Grouper 1KG" class="product-image">
           </div>
-          <button type="button" class="add-btn" aria-label="Add Grouper 1KG to cart">
-            <img src="images/120_130.svg" alt="" class="add-btn__icon">
-            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
-          </button>
           <div class="product-info">
             <span class="price">$50</span>
             <span class="name">Grouper 1KG</span>
           </div>
+          <button type="button" class="add-btn" aria-label="Add Grouper 1KG to cart">
+            <img src="images/120_130.svg" alt="" class="add-btn__icon">
+            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="product-card" data-id="cod-1kg" data-name="Cod 1KG" data-price="25" data-image="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png">
+          <div class="product-image-wrapper">
+            <img src="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" alt="Cod 1KG" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="price">$25</span>
+            <span class="name">Cod 1KG</span>
+          </div>
+          <button type="button" class="add-btn" aria-label="Add Cod 1KG to cart">
+            <img src="images/120_130.svg" alt="" class="add-btn__icon">
+            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="product-card" data-id="haddock-1kg" data-name="Haddock 1KG" data-price="22" data-image="images/e0c689df5feaf746e75041147fc78227b005e4c4.png">
+          <div class="product-image-wrapper">
+            <img src="images/e0c689df5feaf746e75041147fc78227b005e4c4.png" alt="Haddock 1KG" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="price">$22</span>
+            <span class="name">Haddock 1KG</span>
+          </div>
+          <button type="button" class="add-btn" aria-label="Add Haddock 1KG to cart">
+            <img src="images/120_130.svg" alt="" class="add-btn__icon">
+            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="product-card" data-id="halibut-1kg" data-name="Halibut 1KG" data-price="40" data-image="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png">
+          <div class="product-image-wrapper">
+            <img src="images/b277ce0f50d1e3c9b35f73a76098a4730b0ed146.png" alt="Halibut 1KG" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="price">$40</span>
+            <span class="name">Halibut 1KG</span>
+          </div>
+          <button type="button" class="add-btn" aria-label="Add Halibut 1KG to cart">
+            <img src="images/120_130.svg" alt="" class="add-btn__icon">
+            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
+          </button>
+        </div>
+
+        <div class="product-card" data-id="swordfish-1kg" data-name="Swordfish 1KG" data-price="55" data-image="images/e0c689df5feaf746e75041147fc78227b005e4c4.png">
+          <div class="product-image-wrapper">
+            <img src="images/e0c689df5feaf746e75041147fc78227b005e4c4.png" alt="Swordfish 1KG" class="product-image">
+          </div>
+          <div class="product-info">
+            <span class="price">$55</span>
+            <span class="name">Swordfish 1KG</span>
+          </div>
+          <button type="button" class="add-btn" aria-label="Add Swordfish 1KG to cart">
+            <img src="images/120_130.svg" alt="" class="add-btn__icon">
+            <span class="add-btn__text"><svg class="add-btn__plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg> Add to Cart</span>
+          </button>
         </div>
       </div>
     </main>

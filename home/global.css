@@ -17,7 +17,6 @@ body {
 
 .section-container {
   width: 100%;
-  max-width: 390px;
   background-color: #ffffff;
   position: relative;
   margin: 0 auto;
@@ -171,6 +170,16 @@ button {
   }
   .section-container {
     max-width: 100%;
+    padding: 0;
+  }
+  .category-wrapper {
+    padding: 16px 16px 32px 16px;
+  }
+  .hero-wrapper {
+    padding: 16px 16px;
+  }
+  .site-header {
+    padding: 20px 16px;
   }
 }
 
