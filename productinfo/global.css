@@ -5,7 +5,8 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
   padding: 0;
-  max-width: clamp(320px, 90vw, 1200px);
+  width: 100%;
+  max-width: 1368px;
   background-color: #ffffff;
   min-height: 100vh;
   display: flex;
@@ -24,7 +25,7 @@ img {
 }
 
 /* Mobile optimization */
-@media (max-width: 480px) {
+@media (max-width: 499px) {
   body {
     max-width: 100%;
     box-shadow: none;
@@ -32,7 +33,7 @@ img {
 }
 
 /* PC optimization */
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   body {
     box-shadow: none;
   }

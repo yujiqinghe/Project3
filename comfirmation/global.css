@@ -17,11 +17,12 @@ section {
 }
 .mobile-container {
   width: 100%;
-  max-width: clamp(320px, 90vw, 800px);
+  max-width: clamp(320px, 100%, 1368px);
+  margin: 0 auto;
   background-color: #ffffff;
   box-sizing: border-box;
 }
-@media (max-width: 480px) {
+@media (max-width: 499px) {
   .mobile-container {
     max-width: 100%;
   }

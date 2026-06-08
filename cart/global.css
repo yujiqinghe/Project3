@@ -166,7 +166,7 @@ a {
   text-decoration: underline;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 499px) {
   .cart-page {
     max-width: 100%;
   }
@@ -186,17 +186,18 @@ a {
 }
 
 /* Desktop: laptop-adaption3 PurchasePage */
-@media (min-width: 1024px) {
+@media (min-width: 500px) {
   body {
     display: flex;
     justify-content: center;
   }
 
   .cart-page {
-    max-width: 1440px;
+    max-width: 1368px;
     width: 100%;
     min-height: 100vh;
     overflow: visible;
+    margin: 0 auto;
   }
 
   .cart-mobile-only {
