@@ -173,7 +173,7 @@ body {
 
   .product-page {
     width: 100%;
-    max-width: 1440px;
+    max-width: none;
     margin: 0 auto;
   }
 
@@ -367,7 +367,7 @@ body {
 
   .product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 32px;
     padding: 0;
   }

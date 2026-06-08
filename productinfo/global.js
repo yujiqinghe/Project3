@@ -77,6 +77,7 @@ function syncActionButtons() {
       if (!stepper) {
         stepper = document.createElement('div');
         stepper.className = 'qty-stepper active';
+        stepper.id = container.closest('.mobile-footer') ? 'mobile-qty-stepper' : '';
         stepper.innerHTML = `
           <button class="qty-stepper-btn" data-action="dec">−</button>
           <span class="qty-stepper-count">${qty}</span>

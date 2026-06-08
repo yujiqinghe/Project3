@@ -106,7 +106,7 @@
   border-radius: 20px;
   padding: 18px 0;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -173,7 +173,7 @@
       text-align: center;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 900px) {
     body {
       display: flex;
       flex-direction: column;
@@ -185,7 +185,7 @@
     
     #section-header, #section-product, #section-footer {
       width: 100%;
-      max-width: 1368px;
+      max-width: none;
       background-color: white;
       box-sizing: border-box;
     }
@@ -328,7 +328,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 899px) {
     .pc-actions {
       display: none;
     }
@@ -368,9 +368,14 @@
     </div>
   </div>
 </section>
-<section id="section-footer">
+<section id="section-footer" class="mobile-footer">
   <div class="footer-container action-container">
-    <button class="btn-add-cart add-btn-main">Add to cart</button>
+    <button class="btn-add-cart add-btn-main" id="mobile-add-btn">Add to cart</button>
+    <div class="qty-stepper" id="mobile-qty-stepper">
+      <button class="qty-stepper-btn minus" data-action="dec">-</button>
+      <span class="qty-stepper-count">1</span>
+      <button class="qty-stepper-btn plus" data-action="inc">+</button>
+    </div>
   </div>
 </section>
 </body>
