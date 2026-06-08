@@ -114,6 +114,32 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCartBadge();
   syncAllButtons();
 
+  // Sidebar toggle
+  const menuBtnMobile = document.getElementById('menu-btn-mobile');
+  const sidebarOverlay = document.getElementById('sidebar-overlay');
+  const sidebarPanel = document.getElementById('sidebar-panel');
+  const sidebarClose = document.getElementById('sidebar-close');
+
+  function openSidebar() {
+    if (sidebarOverlay && sidebarPanel) {
+      sidebarOverlay.classList.add('active');
+      sidebarPanel.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeSidebar() {
+    if (sidebarOverlay && sidebarPanel) {
+      sidebarOverlay.classList.remove('active');
+      sidebarPanel.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+
+  if (menuBtnMobile) menuBtnMobile.addEventListener('click', openSidebar);
+  if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
+  if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebar);
+
   document.querySelectorAll('.add-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const card = btn.closest('.product-card');

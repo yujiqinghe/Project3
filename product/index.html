@@ -121,11 +121,11 @@
   .add-btn {
     position: absolute;
     right: 12px;
-    top: 90px;
-    width: 24px;
-    height: 24px;
+    bottom: 12px;
+    width: 28px;
+    height: 28px;
     background-color: #b9d133;
-    border-radius: 50%;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,8 +140,8 @@
 
   .add-btn__icon {
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
   }
 
   .product-info {
@@ -164,6 +164,7 @@
     font-size: 12px;
     line-height: 1.25;
     font-family: 'Manrope', sans-serif;
+    padding-right: 32px;
   }
 }
 
@@ -192,7 +193,7 @@
 .qty-stepper {
   position: absolute;
   right: 12px;
-  top: 90px;
+  bottom: 12px;
   display: none;
   align-items: center;
   gap: 4px;
@@ -204,13 +205,13 @@
 }
 
 .qty-stepper-btn {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 1px solid #ebebfb;
   background-color: #ffffff;
   color: #1e222b;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   display: flex;
@@ -232,9 +233,88 @@
   display: none;
 }
 
-.product-main {
-  display: block;
-}
+  .product-main {
+    display: block;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .sidebar-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 51;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+  }
+  .sidebar-panel.active {
+    transform: translateX(0);
+  }
+  .sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 16px 16px;
+  }
+  .sidebar-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #4f5b67;
+    padding: 4px;
+    line-height: 1;
+  }
+  .sidebar-nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px 12px 24px;
+    text-decoration: none;
+    color: #4f5b67;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+  }
+  .sidebar-link:hover {
+    background-color: #f8f9fa;
+  }
+  .sidebar-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    flex-shrink: 0;
+  }
+  .sidebar-footer {
+    padding-top: 8px;
+    border-top: 1px solid #f1f1f1;
+    margin-top: auto;
+  }
   </style>
   <script src="global.js" defer></script>
 </head>
@@ -248,7 +328,9 @@
           <img src="images/b9cfbe1d6eb32a6c5ac37ff59f12ec6048ff589f.png" alt="" class="header-icon">
           <span class="cart-badge">0</span>
         </a>
-        <img src="images/a7859c6a55c5276e55ad6a269202011b8e2cb1bc.png" alt="" class="header-icon">
+        <button class="menu-btn" id="menu-btn-mobile" aria-label="Menu" style="background: none; border: none; padding: 0; cursor: pointer;">
+          <img src="images/a7859c6a55c5276e55ad6a269202011b8e2cb1bc.png" alt="" class="header-icon">
+        </button>
       </div>
     </header>
     <div class="search-bar">
@@ -279,6 +361,13 @@
             <img src="../home/images/0b3eac902df14abaf2aa46e7430e8fd6af51476e.png" class="icon-ai" alt="AI Icon">
           </a>
         </div>
+        <nav class="pc-nav">
+          <a href="../product/index.html" class="pc-nav-link">Fish</a>
+          <a href="#" class="pc-nav-link">Pork</a>
+          <a href="#" class="pc-nav-link">Beefs</a>
+          <a href="#" class="pc-nav-link">Chicken</a>
+          <a href="#" class="pc-nav-link">Other</a>
+        </nav>
       </div>
       <div class="header-desktop__actions">
         <a href="../home/index.html" class="header-desktop__icon-btn" aria-label="Home">
@@ -470,5 +559,53 @@
     </main>
   </section>
 </div>
+<!-- Sidebar Overlay -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<!-- Sidebar Panel -->
+<aside class="sidebar-panel" id="sidebar-panel">
+  <div class="sidebar-header">
+    <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">&#10005;</button>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="../product/index.html" class="sidebar-link">
+      <img src="../Sidebar/images/I107_217_20_671.svg" alt="Fish" class="sidebar-icon">
+      <span class="sidebar-text">Fish</span>
+    </a>
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I114_291_20_671.svg" alt="Pork" class="sidebar-icon">
+      <span class="sidebar-text">Pork</span>
+    </a>
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I107_218_20_688.svg" alt="Beefs" class="sidebar-icon">
+      <span class="sidebar-text">Beefs</span>
+    </a>
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I107_219_20_682.svg" alt="Chicken" class="sidebar-icon">
+      <span class="sidebar-text">Chicken</span>
+    </a>
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I107_220_20_692.svg" alt="Other" class="sidebar-icon">
+      <span class="sidebar-text">Other</span>
+    </a>
+    <a href="../cart/index.html" class="sidebar-link">
+      <img src="../Sidebar/images/I107_221_20_694.svg" alt="Shopping Cart" class="sidebar-icon">
+      <span class="sidebar-text">Shopping Cart</span>
+    </a>
+    <a href="../home/index.html" class="sidebar-link">
+      <img src="../Sidebar/images/I107_222_20_684.svg" alt="Home" class="sidebar-icon">
+      <span class="sidebar-text">Home</span>
+    </a>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I107_225_24_420.svg" alt="Settings" class="sidebar-icon">
+      <span class="sidebar-text">Settings</span>
+    </a>
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I107_226_24_394.svg" alt="Help center" class="sidebar-icon">
+      <span class="sidebar-text">Help center</span>
+    </a>
+  </div>
+</aside>
 </body>
 </html>
