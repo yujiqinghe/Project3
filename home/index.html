@@ -215,6 +215,15 @@
     justify-content: center;
     z-index: 2;
   }
+
+  /* Override any potential inline styles from other sections that might trap z-index */
+  .section-container {
+    z-index: auto !important;
+  }
+  .home-page {
+    z-index: auto !important;
+  }
+
   .sidebar-overlay {
     position: fixed;
     top: 0;
@@ -222,7 +231,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 50;
+    z-index: 99998;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -238,7 +247,7 @@
     width: 260px;
     height: 100%;
     background-color: #ffffff;
-    z-index: 51;
+    z-index: 99999;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     display: flex;
@@ -297,6 +306,55 @@
   <script src="global.js" defer></script>
 </head>
 <body>
+<!-- Sidebar Overlay -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<!-- Sidebar Panel -->
+<aside class="sidebar-panel" id="sidebar-panel">
+  <div class="sidebar-header">
+    <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">&#10005;</button>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="../product/index.html" class="sidebar-link">
+      <img src="../Sidebar/images/I107_217_20_671.svg" alt="Fish" class="sidebar-icon">
+      <span class="sidebar-text">Fish</span>
+    </a>
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I114_291_20_671.svg" alt="Pork" class="sidebar-icon">
+      <span class="sidebar-text">Pork</span>
+    </a>
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I107_218_20_688.svg" alt="Beefs" class="sidebar-icon">
+      <span class="sidebar-text">Beefs</span>
+    </a>
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I107_219_20_682.svg" alt="Chicken" class="sidebar-icon">
+      <span class="sidebar-text">Chicken</span>
+    </a>
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I107_220_20_692.svg" alt="Other" class="sidebar-icon">
+      <span class="sidebar-text">Other</span>
+    </a>
+    <a href="../cart/index.html" class="sidebar-link">
+      <img src="../Sidebar/images/I107_221_20_694.svg" alt="Shopping Cart" class="sidebar-icon">
+      <span class="sidebar-text">Shopping Cart</span>
+    </a>
+    <a href="index.html" class="sidebar-link">
+      <img src="../Sidebar/images/I107_222_20_684.svg" alt="Home" class="sidebar-icon">
+      <span class="sidebar-text">Home</span>
+    </a>
+  </nav>
+  <div class="sidebar-footer" style="flex-shrink: 0; display: flex; flex-direction: column; padding-bottom: 8px;">
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I107_225_24_420.svg" alt="Settings" class="sidebar-icon">
+      <span class="sidebar-text">Settings</span>
+    </a>
+    <a href="#" class="sidebar-link">
+      <img src="../Sidebar/images/I107_226_24_394.svg" alt="Help center" class="sidebar-icon">
+      <span class="sidebar-text">Help center</span>
+    </a>
+  </div>
+</aside>
+
 <div class="home-page">
 <section id="section-header" class="section-container">
   <header class="site-header">
@@ -482,53 +540,5 @@
 </section>
 </div>
 </div>
-<!-- Sidebar Overlay -->
-<div class="sidebar-overlay" id="sidebar-overlay"></div>
-<!-- Sidebar Panel -->
-<aside class="sidebar-panel" id="sidebar-panel">
-  <div class="sidebar-header">
-    <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">&#10005;</button>
-  </div>
-  <nav class="sidebar-nav">
-    <a href="../product/index.html" class="sidebar-link">
-      <img src="../Sidebar/images/I107_217_20_671.svg" alt="Fish" class="sidebar-icon">
-      <span class="sidebar-text">Fish</span>
-    </a>
-    <a href="#" class="sidebar-link">
-      <img src="../Sidebar/images/I114_291_20_671.svg" alt="Pork" class="sidebar-icon">
-      <span class="sidebar-text">Pork</span>
-    </a>
-    <a href="#" class="sidebar-link">
-      <img src="../Sidebar/images/I107_218_20_688.svg" alt="Beefs" class="sidebar-icon">
-      <span class="sidebar-text">Beefs</span>
-    </a>
-    <a href="#" class="sidebar-link">
-      <img src="../Sidebar/images/I107_219_20_682.svg" alt="Chicken" class="sidebar-icon">
-      <span class="sidebar-text">Chicken</span>
-    </a>
-    <a href="#" class="sidebar-link">
-      <img src="../Sidebar/images/I107_220_20_692.svg" alt="Other" class="sidebar-icon">
-      <span class="sidebar-text">Other</span>
-    </a>
-    <a href="../cart/index.html" class="sidebar-link">
-      <img src="../Sidebar/images/I107_221_20_694.svg" alt="Shopping Cart" class="sidebar-icon">
-      <span class="sidebar-text">Shopping Cart</span>
-    </a>
-    <a href="index.html" class="sidebar-link">
-      <img src="../Sidebar/images/I107_222_20_684.svg" alt="Home" class="sidebar-icon">
-      <span class="sidebar-text">Home</span>
-    </a>
-  </nav>
-  <div class="sidebar-footer">
-    <a href="#" class="sidebar-link">
-      <img src="../Sidebar/images/I107_225_24_420.svg" alt="Settings" class="sidebar-icon">
-      <span class="sidebar-text">Settings</span>
-    </a>
-    <a href="#" class="sidebar-link">
-      <img src="../Sidebar/images/I107_226_24_394.svg" alt="Help center" class="sidebar-icon">
-      <span class="sidebar-text">Help center</span>
-    </a>
-  </div>
-</aside>
 </body>
 </html>
